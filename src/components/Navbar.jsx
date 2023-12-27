@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-secondary-subtle">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               Todolist
