@@ -110,7 +110,7 @@ export default function Todolist() {
         className="input-group w-75 p-3"
         onSubmit={(event) => submitTodo(event)}
       >
-        <div className="form-floating">
+        <div className="form-floating bg-secondary-subtle p-1">
           <input
             type="text"
             className="form-control"
@@ -129,11 +129,11 @@ export default function Todolist() {
         {todo.map((item, index) => {
           return (
             <li
-              className="list-group-item list-group-item-action w-75 "
+              className="list-group-item list-group-item-action w-75 bg-secondary mb-1 rounded-2"
               key={index}
             >
               <div style={{ display: item.showText }}>
-                <div class="input-group-text text-center justify-content-between">
+                <div class="input-group-text text-center justify-content-between bg-secondary-subtle mb-1">
                   <input
                     className="form-check-input mt-0 me-1"
                     type="checkbox"
@@ -164,7 +164,7 @@ export default function Todolist() {
                   </div>
                 </div>
               </div>
-              <div style={{ display: item.showInput }}>
+              <div style={{ display: item.showInput }} className="bg-secondary">
                 <form
                   className="input-group form-floating"
                   onSubmit={(event) => changeInputTodo(event, item)}
